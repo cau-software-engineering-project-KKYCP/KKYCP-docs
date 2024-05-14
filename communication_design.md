@@ -2,7 +2,7 @@
 ##  Project
 +   create
 
-![design](.\resources\create_project.svg)
+![design](./resources/create_project.svg)
 
 ##  Issue
 +   create
