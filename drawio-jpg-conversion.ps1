@@ -1,0 +1,1 @@
+Get-ChildItem -Path .\ -Filter *.svg -Recurse | % { draw.io.exe -x --format jpg --border 10 --scale 2.5 $_.fullname }
