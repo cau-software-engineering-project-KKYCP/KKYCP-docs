@@ -17,7 +17,7 @@
 8. Triager가 이슈를 특정 유저에게 할당#  \- 할당에 추천시스템을 활용할 수 있음
 
 9. Fixer가 이슈를 해결함
-10. Tester가 Assginee가 이슈를 제대로 해결했는지 확인함
+10. Tester가 Assginee가 이슈를 제대로 해결했는지 확인함#
 11. Verifier가 resolved된 이슈를 최종 확인 후 close 함
 
 
@@ -209,4 +209,24 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 +   etc
 
     Status는 new/assigned/resolved/closed/reopened 중 1
+
+
+## Tester(reporter)는 Fixer(Assginee)가 이슈를 제대로 해결했는지 확인
+
++   Primary Actor: Tester(=issue Reporter)
+
++   Precondition: 로그인 상태 / Reporter가 report한 issue가 등록되어 있음 / 담당자(assignee = fixer)가 문제를 해결하여, 해당 issue에 코멘트가 추가되고, issue의 상태가 fixed인 상태
     
++   Postcondition: 이슈의 상태가 resolved.
+
++   Basic Flow:
+
+        1.  Tester가 Issue Search 기능을 활용하여, reporter가 자기자신인 이슈들을 확인
+    
+        2.  검색 결과 issue들 중 상태가 fixed인 이슈의 코멘트 확인 및 문제가 해결되었는지 테스트
+    
+        3.  issue의 상태를 resolved로 변경.
+
++   Alternative Flow
+
+ 	    3a. 문제가 해결되지 않은 경우, 코멘트를 추가 후 issue 상태를 다시 assigned로 변경.
