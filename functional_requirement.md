@@ -48,6 +48,8 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 
 +   Primary Actor: User
 
++   Precondition: user가 해당 프로젝트에 참가해야 함
+
 +   Basic flow
 
         1. User가 필터 대상을 선택한다.
@@ -71,11 +73,27 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
     + 검색 키워드 대상
     + Title
 
+## 프로젝트의 유저가 전체 발생한 이슈의 통계를 조회
+
++   Primary Actor: Project's User
+
++   Precondition: user가 로그인 되어있어야 함, user가 해당 프로젝트에 참가해 있어야 함
+
++   Basic flow
+
+        1. 유저가 통계 버튼을 클릭
+
+        2. 시스템은 일일 발생 레포트 통계를 기본으로 보여줌
+
++   Alternate flow
+
+        2a. 유저가 일일/월별/연별/상태별/중요도별 통계 중 어떤 통계를 보여줄 지를 선택하면, 시스템은 해당 통계를 유저에게 보여준다.
+
 ##  프로젝트의 유저가 이슈의 상세 정보를 확인
 
 +   Primary Actor: Project’s User
 
-+   Precondition: user가 시스템에 접속한 상태(로그인) 및 이슈가 등록된 상태
++   Precondition: user가 시스템에 접속한 상태(로그인) 및 이슈가 등록된 상태, user가 해당 프로젝트에 참가해야 함
 
 +   Postcondition: 이슈의 상세정보 UI가 제공됨
 
@@ -93,7 +111,7 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 
 +   Primary Actor: User
 
-+   Precondition: 유저는 시스템에 로그인되어 있어야 함, 해당 이슈가 존재해야 함
++   Precondition: 유저는 시스템에 로그인되어 있어야 함, 해당 이슈가 존재해야 함, user가 해당 프로젝트에 참가해야 함
 
 +   Postcondition: 이슈에 코멘트가 추가됨
 
@@ -118,7 +136,7 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 
 +   Primary Actor: Reporter
 
-+   Precondition : User가 시스템에 접속한 상태(로그인)
++   Precondition : User가 시스템에 접속한 상태(로그인), user가 해당 프로젝트에 참가해야 함
 
 +   Postcondition: Report된 이슈가 시스템 상에 영구히 저장된다.
 
@@ -191,3 +209,4 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 +   etc
 
     Status는 new/assigned/resolved/closed/reopened 중 1
+    
