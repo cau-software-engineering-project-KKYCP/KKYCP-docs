@@ -18,7 +18,7 @@
 
 9. Fixer가 이슈를 해결함
 10. Tester가 Assginee가 이슈를 제대로 해결했는지 확인함#
-11. Verifier가 resolved된 이슈를 최종 확인 후 close 함
+11. Verifier가 resolved된 이슈를 최종 확인 후 close 함#
 
 
 
@@ -272,3 +272,24 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 +   Alternative Flow
 
  	    3a. 문제가 해결되지 않은 경우, 코멘트를 추가 후 issue 상태를 다시 assigned로 변경.
+
+
+## Verifier가 resolved된 이슈를 최종 확인 후 close 함
+
++  Primary Actor: Verifier(Verified User)
+
++  Precondition: 이슈가 최소 1개 이상 만들어져 있다. / 현재 이슈의 상태가 resolved 이다.
+
++  Postcondition: 이슈의 상태가 closed이다.
+
++  Basic Flow:
+
+       1.   Verifer는 Issue Id를 통해 project에 속해있는 Issue를 선택한다.
+   
+       2.   Issue의 상태가 resolved 인지 확인한다.
+   
+       3.   resolved인 경우 Veifier는 Issue의 상태를 closed로 변경한다.
+
++  Alterantive Flow
+
+        3a.  그렇지 않으면, closed로 변경할 수 없다.
