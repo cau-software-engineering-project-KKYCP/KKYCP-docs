@@ -24,7 +24,7 @@
 
 ![design](./resources/addIssue.png)
 
-+  solver
++  solve
 
 ![design](./resources/issueSolved.png)
 
