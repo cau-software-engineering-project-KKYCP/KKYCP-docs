@@ -4,6 +4,17 @@
 
 ![design](./resources/create_project.jpg)
 
+
++ AddUser
+
+![design](./resources/addUserToProject.png)
+
+
++ Find
+
+![design](./resources/addUserToProject.png)
+
+
 ##  Issue
 +   create
 
