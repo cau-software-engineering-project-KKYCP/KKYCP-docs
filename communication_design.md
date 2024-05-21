@@ -24,11 +24,11 @@
 
 +  report
 
-![design](./resources/addIssue.png)
+![design](./resources/addIssue.jpg)
 
 +  solve
 
-![design](./resources/issueSolved.png)
+![design](./resources/issueSolved.jpg)
 
 +  description
 
