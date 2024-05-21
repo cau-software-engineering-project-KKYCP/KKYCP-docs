@@ -12,7 +12,7 @@
 
 + Find
 
-![design](./resources/addUserToProject.png)
+![design](./resources/find_issue.png)
 
 
 ##  Issue
