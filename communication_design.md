@@ -13,6 +13,7 @@
 + Find
 
 ![design](./resources/find_issue.png)
+**Usecase 4번은 Usecase 5번의 Find 기능에서 Filter, Key를 전체값을 검색한다는 방식으로 extend된 기능입니다.**
 
 
 ##  Issue
