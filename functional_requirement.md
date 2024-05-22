@@ -75,9 +75,12 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 
         3. 시스템은 해당 유저를 프로젝트에 등록한 후, 성공 응답을 Admin에게 보내준다.
 
-+    Alternate flow
++   Alternate flow
 
         3a. 유저가 이미 해당 프로젝트에 참가해 있거나, 해당 프로젝트나 유저를 시스템 상에서 찾을 수 없을 경우, 적절한 에러 응답을 Admin에게 보내준다.
+
++   Etc: 권한의 종류는 [authorization_document.md](https://github.com/cau-software-engineering-project-KKYCP/KKYCP-docs/blob/main/authorization_document.md)에서 확인할 수 있다.
+
 
 ## 관리자가 프로젝트의 유저에게 권한을 부여
 
