@@ -32,19 +32,19 @@
 
 +  description
 
-![design](./resources/Issue_description_SSD.png)
+![design](./resources/Issue_Description(SSD).png)
 
-![design](./resources/Issue_description.png)
+![design](./resources/Issue_Description.png)
 
 + statistics
 
-![design](./resources/Issue_staticstics_SSD.png)
+![design](./resources/Report_Statistics(SSD).png)
 
-![design](./resources/Issue_statistics.png)
+![design](./resources/Report_Statistics.png)
 
 ##  Comment
 +   JPA의 도움으로, Project에 List<Comment> comments 필드를 넣고, comments.add()를 하면 자동으로 DB에 comment가 저장된다.
 
-![design](./resources/Comment_SSD.png)
+![design](./resources/Comment_Manage(SSD).png)
 
-![design](./resources/Comment.png)
+![design](./resources/Comment_Manage.png)
