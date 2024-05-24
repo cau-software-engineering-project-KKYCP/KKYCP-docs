@@ -3,7 +3,7 @@
 
 +  register_login
 
-![design](./resources/register_login.png)
+![design](./resources/register_login.jpg)
 
 +   create
 
