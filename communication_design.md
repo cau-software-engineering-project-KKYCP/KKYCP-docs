@@ -1,4 +1,14 @@
 #   Design
+## Privilege
+
++  Admin
+
+![design](./resources/AdminGrantsPrivilege.jpg)
+
++ change_status
+
+![design](./resources/PrivilegedUserchangesState.jpg)
+
 ##  Project
 
 +  register_login
@@ -46,6 +56,10 @@
 ![design](./resources/Report_Statistics(SSD).png)
 
 ![design](./resources/Report_Statistics.png)
+
++ allocate_user_to_issue,_user_recommendation
+
+![design](./resources/TriagerAllocatesUser_Recommendation.jpg)
 
 ##  Comment
 +   JPA의 도움으로, Project에 List<Comment> comments 필드를 넣고, comments.add()를 하면 자동으로 DB에 comment가 저장된다.
