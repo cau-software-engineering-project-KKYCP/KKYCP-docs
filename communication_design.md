@@ -67,3 +67,13 @@
 ![design](./resources/Comment_Manage(SSD).png)
 
 ![design](./resources/Comment_Manage.png)
+
+## User
+
++  list
+
+![design](./resources/userList.jpg)
+
++  search
+
+![design](./resources/userSearch.jpg)
