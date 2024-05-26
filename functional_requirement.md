@@ -10,6 +10,8 @@
 6. 프로젝트의 유저가 이슈를 검색
 7. 프로젝트의 유저가 전체 발생한 이슈의 통계를 조회
 8. 프로젝트의 유저가 이슈의 상세 정보를 확인
+9. 프로젝트의 유저가 유저를 조회
+10. 프로젝트의 유저가 유저를 검색
 
   \- 이슈의 상태와 코멘트를 확인 가능
 
@@ -177,6 +179,37 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 +   Alternative flow
 
         2a. 선택된 이슈의 상세정보를 불러오는데 실패한다면, 유저에게 알린다.
+
+#  유저 조회
+
++  Primary Actor: User
+
++  Precondition: User는 특정 Project에 할당되어 있어야 한다.
+
++  Basic Flow:
+
+        1.   User는 자신이 속해있는 Project 페이지에 접속한다.
+   
+        2.   Paricipated Users 버튼을 누른다.
+   
+        3.   Project에 참여하고 있는 User들의 리스트를 표시하고
+             User의 ID, 별명, 권한, 액션 등 부가정보도 함께 표시한다.
+   
+        4.   <<extend>> Username을 통한 User 검색 기능
+
+## 유저 검색
+
++  Primary Actor: User
+
++  Precondition: Project내의 User가 한 명 이상 할당되어 있다.
+
++  Basic Flow::
+
+        1.  Username을 입력하면 일치하는 User를 표시한다.
+
++  Alternative Flow:
+
+        1a. User를 찾을 수 없으면 에러 메시지가 표시된다.
 
 ##  유저가 이슈에 코멘트를 달고, 자신이 단 코멘트를 관리함
 
