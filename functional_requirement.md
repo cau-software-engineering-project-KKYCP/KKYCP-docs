@@ -180,7 +180,7 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 
         2a. 선택된 이슈의 상세정보를 불러오는데 실패한다면, 유저에게 알린다.
 
-#  유저 조회
+##  유저 조회
 
 +  Primary Actor: User
 
@@ -203,7 +203,7 @@ a. 권한이 있는 User가 이슈의 상태를 변경#
 
 +  Precondition: Project내의 User가 한 명 이상 할당되어 있다.
 
-+  Basic Flow::
++  Basic Flow:
 
         1.  Username을 입력하면 일치하는 User를 표시한다.
 
