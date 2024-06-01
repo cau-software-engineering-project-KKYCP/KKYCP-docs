@@ -1,3 +1,15 @@
+# Spring boot 사용 결정 이유
+
+인터넷에서 가장 널리 사용되는 standard한 stateless 프로토콜인 HTTP를 사용해 작업하기로 했습니다. 그러다 보니 서버 프로그래밍에서 HTTP 서버를 만들기 위해 가장 많이 사용되는 자바 프레임워크인 스프링 웹 + 부트를 사용하기로 했습니다.
+
+# Spring security 사용 결정 이유
+
+쉽고 빠르게 authentication과 authorization을 구현하기 위해 사용했습니다.
+
+# QueryDsl 사용 결정 이유
+
+검색 및 필터링 기능은 일반적인 쿼리문 작성 방식으로 구현하기 까다로운 부분이 있습니다. 이에 따라, 동적 쿼리문을 작성하기 위해 QueryDsl을 사용했습니다.
+
 # JPA 사용 결정 이유
 
 Jpa를 사용하면 도메인 클래스가 Jpa 관련 annotation 및 추가 작업에 영향을 받습니다. 
